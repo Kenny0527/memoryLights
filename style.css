@@ -17,19 +17,62 @@ html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
-  top: 25vh;
+  top: 15vh;
 }
 
 .light_container {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 5px;
+  border-radius: 15%;
 }
 
 .light_bulb {
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 150px;
   filter: opacity(80%);
   border-radius: 15%;
   box-shadow: 0 8px 16px black;
+}
+
+@media screen and (max-width: 576px) {
+  .light_container {
+    border: 1px solid blue;
+  }
+  .light_bulb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .light_container {
+    border: 2px solid teal;
+  }
+  .light_bulb {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .light_container {
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+  }
+  .light_bulb {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .light_container {
+    border: 4px solid pink;
+  }
+  .light_bulb {
+    width: 200px;
+    height: 200px;
+  }
 }
